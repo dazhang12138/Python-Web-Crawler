@@ -17,7 +17,7 @@ def getmainHTmlCode(htmlurl):
 
 #正则分析标签页源码找出图片
 def getmainHTmlChildPage(htmlCode):
-    reg = r'<img id="image[0-9]*" class="multi-photo-image" src="[^`]*" alt="">'
+    reg = r'<img id="image[0-9]*" class="multi-photo-image" src="[^`]*?" alt="">'
     pattern = re.compile(reg)
     urls = re.findall(pattern,htmlCode)
     return urls
