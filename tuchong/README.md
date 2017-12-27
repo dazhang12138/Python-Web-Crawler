@@ -131,3 +131,11 @@ https://photo.tuchong.com/①/②/③
 
 这样能够通过右键打开网站源代码。
 
+---
+
+## 更新记录
+
+2017/12/27 16:10:30 
+
+	更改正则匹配规则为 : 
+    reg = r'<img id="image[0-9]*" class="multi-photo-image" src="[^`]*?" alt="">'
